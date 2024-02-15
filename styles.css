@@ -1,0 +1,308 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #080808;
+  --white: #fefefe;
+  --gray: #565656;
+
+  --teal: #006060;
+  --violetred: #a2106d;
+  --orange: #ffa500;
+}
+
+body {
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.2em;
+  color: var(--black);
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  width: 400px;
+}
+
+/* Code for exercise 01-navbar */
+nav {
+  background-color: var(--black); 
+  color: var(--white); 
+  padding: 1em 0;
+}
+
+nav ul {
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+  display: flex; 
+  justify-content: flex-end; 
+}
+
+nav ul li {
+  margin: 0 10px; 
+}
+
+nav a {
+  text-decoration: none; 
+  color: var(--white); 
+  font-weight: bold; 
+  font-size: 0.8em; 
+  padding: 10px 20px; 
+}
+
+nav a:hover, nav a:focus {
+  background-color: var(--violetred); 
+  color: var(--white); 
+  border-radius: 0; 
+}
+
+
+/* Code for exercise 02-cards */
+
+/* Code for exercise 03-table */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  text-align: center;
+
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+thead th {
+  background-color: var(--black);
+  color: var(--white);
+  border-bottom: 3px solid var(--white);
+}
+
+tbody td {
+  background-color: var(--white);
+  color: var(--black);
+  text-align: left
+}
+
+tbody tr:hover td {
+  background-color: var(--orange); 
+}
+
+
+.channel {
+  background-color: var(--violetred) !important; 
+  color: var(--white) !important; 
+  text-align: center
+}
+
+
+
+.channel {
+  font-weight: bold;
+
+}
+
+.abc {
+  background-color: var(--violetred);
+}
+
+.cbs {
+  background-color: var(--violetred);
+}
+
+.nbc {
+  background-color: var(--violetred); 
+}
+
+.fox {
+  background-color: var(--violetred); 
+}
+
+
+
+
+
+/* Code for exercise 04-form */
+body, html {
+  height: 100%; 
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  border: 2px solid #ccc; 
+  padding: 20px;
+  max-width: 600px; 
+  margin: auto;
+  background-color: #fff; 
+}
+
+
+.input-group {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+
+.input-group label {
+  flex: 1; 
+  margin-right: 10px; 
+}
+
+
+.input-group input,
+.input-group select,
+.input-group input[type="radio"] + label {
+  width: 70%; 
+  flex-shrink: 0; 
+}
+
+
+fieldset {
+  border: none; 
+  padding: 0; 
+  margin-top: 10px; 
+  width: auto; 
+  margin-left: 0; 
+}
+
+.radio-group {
+  margin-bottom: 5px; 
+}
+
+h2, p {
+  text-align: left; 
+  margin: 0 0 10px 0; 
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+
+label {
+  font-weight: bold; 
+  margin-top: 10px;
+  font-size: 0.9em; 
+}
+
+
+legend {
+  font-weight: bold;
+  font-size: 0.9em; 
+}
+
+
+.radio-group label {
+  font-weight: normal;
+}
+
+
+input[type="radio"] + label {
+  margin-left: 5px; 
+  display: inline-block; 
+}
+
+button {
+  width: 70%;
+  margin-left: auto; 
+  margin-bottom: 10px;
+}
+
+
+button:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+    .input-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .input-group label {
+        flex-basis: auto; 
+        margin-bottom: 5px; 
+    }
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between; 
+  padding: 0 10px; 
+  width: 100%; 
+}
+
+
+button {
+  flex-grow: 1; 
+  margin: 10px 5px 0; 
+  width: auto; 
+}
+
+
+/* code for exercise 05 cards */
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.card {
+  width: 30%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ccc;
+}
+
+.card p {
+  text-align: center;
+  margin: 15px 0;
+  flex-grow: 1;
+}
+
+.card button {
+  width: calc(100% - 20px);
+  padding: 10px 0;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.card button:hover {
+  background-color: var(--violetred);
+  opacity: 0.8;
+}
+
+.card-title {
+  
+  color: solid black;
+  text-align: center;
+  padding: 10px 0;
+  margin: -10px -10px 10px -10px; 
+  font-weight: bold;
+}
